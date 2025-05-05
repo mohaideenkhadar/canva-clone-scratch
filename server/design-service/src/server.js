@@ -17,6 +17,10 @@ mongoose.connect(process.env.MONGODB_URL)
     app.use(express.json());
     app.use(express.urlencoded({extended : true}));
     app.use('/api/designs', designRoutes);
+    app.use(cors({
+        origin : ["https://abdul-canva-clone.netlify.app/login"],
+        methods: ["GET", "POST", "PUT", "DELETE"],
+    }));
 
     async function startServer(){
         try{
