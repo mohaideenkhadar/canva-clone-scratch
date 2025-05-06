@@ -1,1 +1,1 @@
-export const API_URL = "https://api-gateway-7icg.onrender.com/";
+export const API_URL = "https://api-gateway-7icg.onrender.com";
